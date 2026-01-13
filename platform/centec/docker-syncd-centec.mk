@@ -1,7 +1,8 @@
 # docker image for centec syncd
 
+#DOCKER_SYNCD_CENTEC = docker-syncd-centec.gz
 DOCKER_SYNCD_PLATFORM_CODE = centec
-include $(PLATFORM_PATH)/../template/docker-syncd-bullseye.mk
+include $(PLATFORM_PATH)/../template/docker-syncd-bookworm.mk
 
 $(DOCKER_SYNCD_BASE)_DEPENDS += $(SYNCD)
 
